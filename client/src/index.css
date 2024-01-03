@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: rgb(167, 167, 167);
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
