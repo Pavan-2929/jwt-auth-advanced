@@ -39,7 +39,6 @@ function SignUp() {
     }
   };
 
-  console.log(formData);
   return (
     <div className="p-6 max-w-lg mx-auto bg-gray-200 rounded-lg shadow-md mt-14">
       <h1 className="text-3xl text-center font-semibold my-7 text-gray-800">

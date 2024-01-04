@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { signInStart, signInSuccess, signInFailure } from "../redux/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
+import GoogleAuth from "../components/GoogleAuth";
 
 function SignIn() {
   const [formData, setFormData] = useState({});
@@ -65,15 +66,16 @@ function SignIn() {
         >
           {loading ? "Loading..." : "Sign-UP"}
         </button>
+        <GoogleAuth/>
       </form>
       <div className="text-center mt-5">
         <div className="flex items-center justify-center">
-          <p className="text-gray-600 mr-2">Have an account?</p>
+          <p className="text-gray-600 mr-2">Do not have an account?</p>
           <Link
-            to="/sign-in"
+            to="/sign-up"
             className="text-blue-500 font-semibold hover:underline"
           >
-            Sign in
+            Sign up
           </Link>
         </div>
         <p className="text-red-700 font-semibold mt-5">
