@@ -13,13 +13,13 @@ function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  console.log(currentUser);
-  console.log(
-    "profilePicture:",
-    currentUser
-      ? currentUser.profilePicture
-      : "No profile picture"
-  );
+  // console.log(currentUser);
+  // console.log(
+  //   "profilePicture:",
+  //   currentUser
+  //     ? currentUser.profilePicture
+  //     : "No profile picture"
+  // );
 
   return (
     <header className=" p-3 sm:p-[0] text-[1.8rem] font-bold bg-gray-200">
